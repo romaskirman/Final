@@ -1,5 +1,28 @@
+.card {
+  padding: 40px 30px;
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .card .header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px; }
+    .card .header .card_logo {
+      width: 30px;
+      height: 30px;
+      background: red; }
+    .card .header .card_title {
+      margin-bottom: 30px; }
+  .card .card_descr {
+    margin-bottom: 30px; }
+  .card .card_power-red {
+    color: red; }
+  .card .card_power-green {
+    color: green; }
+
 * {
   padding: 0;
-  display: flex; }
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
