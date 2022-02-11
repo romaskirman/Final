@@ -1,0 +1,58 @@
+.header{
+  max-width: 1440px;
+  width: 100%;
+  .header-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 9.375%;
+    .logo{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .logo-link{
+        color: $darkblue;
+        margin-left: 6px;
+        margin-top: 6px;
+      }
+    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .menu-list{
+        margin-right: 40px;
+        line-height: 20px;
+        .menu-link{
+          color: $darkblue;
+        }
+      }
+      .menu-list:last-child{
+        margin-right: 0;
+      }
+    }
+    .log-in{
+      width: 96px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .log-link {
+        width: 100%;
+        .login-btn {
+          width: 100%;
+          background: $btn-color;
+          border: none;
+          border-radius: 6px;
+          line-height: 40px;
+          font-size: 16px;
+          color: $white;
+        }
+        .login-btn:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

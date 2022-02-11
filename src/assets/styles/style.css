@@ -47,4 +47,51 @@ a {
 html {
   font-family: 'Rubik', sans-serif; }
 
+.header {
+  max-width: 1440px;
+  width: 100%; }
+  .header .header-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 9.375%; }
+    .header .header-block .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .header .header-block .logo .logo-link {
+        color: #02012B;
+        margin-left: 6px;
+        margin-top: 6px; }
+    .header .header-block .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .header .header-block .menu .menu-list {
+        margin-right: 40px;
+        line-height: 20px; }
+        .header .header-block .menu .menu-list .menu-link {
+          color: #02012B; }
+      .header .header-block .menu .menu-list:last-child {
+        margin-right: 0; }
+    .header .header-block .log-in {
+      width: 96px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .header .header-block .log-in .log-link {
+        width: 100%; }
+        .header .header-block .log-in .log-link .login-btn {
+          width: 100%;
+          background: #19BCE4;
+          border: none;
+          border-radius: 6px;
+          line-height: 40px;
+          font-size: 16px;
+          color: #FFFFFF; }
+        .header .header-block .log-in .log-link .login-btn:hover {
+          cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

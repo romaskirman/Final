@@ -9,3 +9,24 @@ html(lang='en')
         link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap", rel="stylesheet")
     body
         include ./extra/mixins
+
+        section.header
+            .header-block
+                .logo
+                    img(src="./assets/images/Group 3311main-logo.png", alt="house")
+                    a.logo-link(href="#") Building
+                nav
+                    ul.menu
+                        li.menu-list
+                            a.menu-link(href="#") Home
+                        li.menu-list
+                            a.menu-link(href="#") Services
+                        li.menu-list
+                            a.menu-link(href="#") About Us
+                        li.menu-list
+                            a.menu-link(href="#") Properties
+                        li.menu-list
+                            a.menu-link(href="#") Contact
+                .log-in
+                    a.log-link(href="#")
+                        button.login-btn(type="submit") Log In
