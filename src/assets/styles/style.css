@@ -94,4 +94,11 @@ html {
         .header .header-block .log-in .log-link .login-btn:hover {
           cursor: pointer; }
 
+.hero {
+  max-width: 1440px;
+  width: 100%;
+  background-image: url("src/assets/images/image 134hero.png"); }
+  .hero .hero-block {
+    padding: 0 9.375%; }
+
 /*# sourceMappingURL=style.css.map */
