@@ -1,0 +1,37 @@
+
+.card{
+  padding: 40px 30px;
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    .card_logo{
+      width: 30px;
+      height: 30px;
+      background: red;
+    }
+    .card_title{
+      margin-bottom: 30px;
+    }
+  }
+
+  .card_descr{
+    margin-bottom: 30px;
+  }
+
+  .card_power{
+    &-red {
+      color: red;
+    }
+    &-green{
+      color: green;
+    }
+  }
+
+}

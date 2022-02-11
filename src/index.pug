@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Final
+        link(rel="stylesheet", href="./assets/styles/style.css")
+    body
+        header
+            p= tel
+        include ./section/mixins
+        .hero
+            h1= heroSection.title
+            p= heroSection.subtitle
+            .wrap
+                each card in heroSection.cards
+                    +Card(card.title, card.description, card.link, card.img, card.power)
+
+        footer
+            p= tel
