@@ -4,16 +4,8 @@ html(lang='en')
         meta(charset='UTF-8')
         title Final
         link(rel="stylesheet", href="./assets/styles/style.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap", rel="stylesheet")
     body
-        header
-            p= tel
-        include ./section/mixins
-        .hero
-            h1= heroSection.title
-            p= heroSection.subtitle
-            .wrap
-                each card in heroSection.cards
-                    +Card(card.title, card.description, card.link, card.img, card.power)
-
-        footer
-            p= tel
+        include ./extra/mixins
