@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -95,10 +96,79 @@ html {
           cursor: pointer; }
 
 .hero {
+  position: relative;
   max-width: 1440px;
   width: 100%;
-  background-image: url("src/assets/images/image 134hero.png"); }
+  background: url("/assets/images/image 134hero.png");
+  background-size: cover; }
   .hero .hero-block {
-    padding: 0 9.375%; }
+    position: relative;
+    z-index: 3;
+    padding: 185px 9.375% 140px 9.375%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .hero .hero-block .main-title {
+      color: #FFFFFF; }
+    .hero .hero-block .main-description {
+      margin-top: 24px;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 30px; }
+    .hero .hero-block .search-menu {
+      width: 100%;
+      margin-top: 97px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFFFF;
+      padding: 24px; }
+      .hero .hero-block .search-menu .h-card {
+        width: 23%;
+        padding: 10px 30px;
+        border: 0.5px solid rgba(25, 188, 228, 0.3); }
+        .hero .hero-block .search-menu .h-card .h-card-title {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .hero .hero-block .search-menu .h-card .h-card-title .h-card-paragraph {
+            margin-right: 6px;
+            color: #555555; }
+          .hero .hero-block .search-menu .h-card .h-card-title .strelka:hover {
+            cursor: pointer; }
+        .hero .hero-block .search-menu .h-card .h-card-text {
+          margin-top: 8px;
+          line-height: 24px;
+          color: #222222; }
+          .hero .hero-block .search-menu .h-card .h-card-text .special-weight {
+            font-weight: 500; }
+          @media screen and (max-width: 1350px) {
+            .hero .hero-block .search-menu .h-card .h-card-text .special-font {
+              font-size: 16px; } }
+          @media screen and (max-width: 1170px) {
+            .hero .hero-block .search-menu .h-card .h-card-text .special-font {
+              font-size: 12px; } }
+      .hero .hero-block .search-menu .search-block {
+        width: 23%;
+        background: #19BCE4; }
+        .hero .hero-block .search-menu .search-block .search-link {
+          color: #FFFFFF; }
+          .hero .hero-block .search-menu .search-block .search-link .search-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 23px 0; }
+
+.hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.56);
+  z-index: 2; }
 
 /*# sourceMappingURL=style.css.map */
