@@ -1,0 +1,123 @@
+.about{
+  max-width: 1440px;
+  width: 100%;
+  .about-block{
+    padding: 120px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .img-container{
+      width: 48.4375%;
+      .big-about-img {
+        width: 93.19%;
+        position: relative;
+        .fix-big-img{
+          max-width: 100%;
+        }
+      }
+      .small-about-img {
+        position: absolute;
+        top: 78.93%;
+        left: 61.15%;
+        .fix-small-img{
+          max-width: 115%;
+        }
+      }
+    }
+    .description-container{
+      width: 47.9166%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .about-smalltitle{
+        color: $darkblue;
+        line-height: 27px;
+      }
+      .about-bigtitle{
+        color: $black;
+        margin-top: 10px;
+        line-height: 61px;
+        @media screen and (max-width: 1410px){
+          line-height: 51px;
+          font-size: 40px;
+        }
+        @media screen and (max-width: 1175px){
+          line-height: 40px;
+          font-size: 32px;
+        }
+      }
+      .about-description{
+        color: $gray;
+        line-height: 27px;
+        margin-top: 24px;
+        @media screen and (max-width: 1250px){
+          line-height: 21.6px;
+          font-size: 16px;
+        }
+        @media screen and (max-width: 1000px){
+          line-height: 18.9px;
+          font-size: 14px;
+        }
+      }
+      .about-cards{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        .ab-card{
+          width: 42.03%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .about-title{
+            margin-top: 24px;
+            line-height: 28px;
+            color: $black;
+            @media screen and (max-width: 1437px){
+              font-size: 20px;
+            }
+            @media screen and (max-width: 1200px){
+              font-size: 16px;
+            }
+          }
+          .about-paragraph{
+            margin-top: 16px;
+            line-height: 17px;
+            color: $gray;
+            @media screen and (max-width: 1390px){
+              font-size: 12px;
+            }
+            @media screen and (max-width: 1190px){
+              font-size: 10px;
+            }
+            @media screen and (max-width: 1000px){
+              font-size: 9px;
+            }
+          }
+
+        }
+      }
+      .about-btn{
+        width: 30.61705%;
+        background: $btn-color;
+        margin-top: 40px;
+        border-radius: 6px;
+        .about-link{
+          color: $white;
+          .explore-now{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 0;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
