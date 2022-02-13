@@ -1,3 +1,4 @@
+@import "./media/_mediaabout";
 .about{
   max-width: 1440px;
   width: 100%;
@@ -39,27 +40,15 @@
         color: $black;
         margin-top: 10px;
         line-height: 61px;
-        @media screen and (max-width: 1410px){
-          line-height: 51px;
-          font-size: 40px;
-        }
-        @media screen and (max-width: 1175px){
-          line-height: 40px;
-          font-size: 32px;
-        }
+        @media screen and (max-width: 1410px){line-height: 51px;}
+        @media screen and (max-width: 1175px){line-height: 40px;}
       }
       .about-description{
         color: $gray;
         line-height: 27px;
         margin-top: 24px;
-        @media screen and (max-width: 1250px){
-          line-height: 21.6px;
-          font-size: 16px;
-        }
-        @media screen and (max-width: 1000px){
-          line-height: 18.9px;
-          font-size: 14px;
-        }
+        @media screen and (max-width: 1250px){line-height: 21.6px;}
+        @media screen and (max-width: 1000px){line-height: 18.9px;}
       }
       .about-cards{
         width: 100%;
@@ -77,28 +66,12 @@
             margin-top: 24px;
             line-height: 28px;
             color: $black;
-            @media screen and (max-width: 1437px){
-              font-size: 20px;
-            }
-            @media screen and (max-width: 1200px){
-              font-size: 16px;
-            }
           }
           .about-paragraph{
             margin-top: 16px;
             line-height: 17px;
             color: $gray;
-            @media screen and (max-width: 1390px){
-              font-size: 12px;
-            }
-            @media screen and (max-width: 1190px){
-              font-size: 10px;
-            }
-            @media screen and (max-width: 1000px){
-              font-size: 9px;
-            }
           }
-
         }
       }
       .about-btn{

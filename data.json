@@ -1,0 +1,27 @@
+{
+  "cards": [
+    {
+      "img": "./assets/images/Group 3254first-logo.png",
+      "title": "Family House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+
+    {
+      "img": "./assets/images/Group 3255second-logo.png",
+      "title": "Apartment",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+
+    {
+      "img": "./assets/images/Group 3252third-logo.png",
+      "title": "Studio & Offices",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+
+    {
+      "img": "./assets/images/Group 3253fourth-logo.png",
+      "title": "Villa & Condo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    }
+  ]
+}
