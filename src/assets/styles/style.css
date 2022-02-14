@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -46,5 +47,116 @@ a {
 
 html {
   font-family: 'Rubik', sans-serif; }
+
+@media screen and (max-width: 1439px) {
+  .popular-card-title {
+    font-size: 19.2px; }
+
+  .popular-card-descr {
+    font-size: 16px; } }
+@media screen and (max-width: 1152px) {
+  .popular-title {
+    font-size: 36px; }
+
+  .popular-descr {
+    font-size: 16px; }
+
+  .popular-card-title {
+    font-size: 16.8px; }
+
+  .popular-card-descr {
+    font-size: 14px; } }
+@media screen and (max-width: 1024px) {
+  .popular-title {
+    font-size: 32px; }
+
+  .popular-descr {
+    font-size: 14px; }
+
+  .popular-card-descr {
+    font-size: 13px; } }
+.popular {
+  max-width: 1440px;
+  width: 100%; }
+  .popular .popular-block {
+    padding: 120px 9.375%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .popular .popular-block .popular-title {
+      color: #222222;
+      line-height: 61px; }
+    .popular .popular-block .popular-descr {
+      color: #555555;
+      line-height: 27px;
+      margin-top: 16px; }
+    .popular .popular-block .cards-container {
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      .popular .popular-block .cards-container .link-popular {
+        width: 31.63%; }
+        .popular .popular-block .cards-container .link-popular .big-card {
+          position: relative; }
+          .popular .popular-block .cards-container .link-popular .big-card .big-card-blur {
+            width: 54.05%;
+            position: absolute;
+            top: 62.96%;
+            left: 22.97%;
+            background-image: url("../images/Rectangle 2191bangladesh-blur.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center; }
+      .popular .popular-block .cards-container .small-cards {
+        width: 65.82%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; }
+        .popular .popular-block .cards-container .small-cards .card-row {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between; }
+          .popular .popular-block .cards-container .small-cards .card-row .link-popular-small {
+            width: 48.05%; }
+            .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card {
+              position: relative; }
+              .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .small-card-blur {
+                width: 54.05%;
+                position: absolute;
+                top: 56.07%;
+                left: 22.97%;
+                display: flex;
+                flex-direction: column;
+                align-items: center; }
+              .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .jpn {
+                background-image: url("../images/Rectangle 2192japan-blur.png"); }
+              .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .malaysia {
+                background-image: url("../images/Rectangle 2193malaysia-blur.png"); }
+              .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .london {
+                background-image: url("../images/Rectangle 2194london-blur.png"); }
+              .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .india {
+                background-image: url("../images/Rectangle 2195india-blur.png"); }
+        .popular .popular-block .cards-container .small-cards .card-row:last-child {
+          margin-top: 3.377%; }
+
+.bg-position {
+  max-width: 100%; }
+
+.popular-card-title {
+  color: #FFFFFF;
+  margin-top: 6%;
+  padding: 0 16%; }
+
+.popular-card-descr {
+  color: #FFFFFF;
+  margin-top: 4%;
+  margin-bottom: 8%;
+  padding: 0 18.5%; }
 
 /*# sourceMappingURL=style.css.map */

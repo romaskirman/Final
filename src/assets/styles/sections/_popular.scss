@@ -1,0 +1,105 @@
+@import "./media/_mediapopular";
+.popular{
+  max-width: 1440px;
+  width: 100%;
+  .popular-block{
+    padding: 120px 9.375%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .popular-title{
+      color: $black;
+      line-height: 61px;
+    }
+    .popular-descr{
+      color: $gray;
+      line-height: 27px;
+      margin-top: 16px;
+    }
+    .cards-container{
+      width: 100%;
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .link-popular {
+        width: 31.63%;
+        .big-card {
+          position: relative;
+          .big-card-blur {
+            width: 54.05%;
+            position: absolute;
+            top: 62.96%;
+            left: 22.97%;
+            background-image: url("../images/Rectangle 2191bangladesh-blur.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+      .small-cards{
+        width: 65.82%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .card-row{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .link-popular-small{
+            width: 48.05%;
+            .small-card {
+              position: relative;
+              .small-card-blur{
+                width: 54.05%;
+                position: absolute;
+                top: 56.07%;
+                left: 22.97%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              .jpn {
+                background-image: url("../images/Rectangle 2192japan-blur.png");
+              }
+
+              .malaysia {
+                background-image: url("../images/Rectangle 2193malaysia-blur.png");
+              }
+
+              .london {
+                background-image: url("../images/Rectangle 2194london-blur.png");
+              }
+
+              .india {
+                background-image: url("../images/Rectangle 2195india-blur.png");
+              }
+            }
+          }
+        }
+        .card-row:last-child{
+          margin-top: 3.377%;
+        }
+      }
+    }
+  }
+}
+.bg-position{
+  max-width: 100%;
+}
+.popular-card-title{
+  color: $white;
+  margin-top: 6%;
+  padding: 0 16%;
+}
+.popular-card-descr{
+  color: $white;
+  margin-top: 4%;
+  margin-bottom: 8%;
+  padding: 0 18.5%;
+}
