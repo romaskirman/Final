@@ -50,13 +50,19 @@ html {
 
 .header {
   max-width: 1440px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
   .header .header-block {
+    max-width: 81.25%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 45px 9.375%; }
+    padding: 45px 0; }
     .header .header-block .logo {
       display: flex;
       flex-direction: row;
@@ -91,26 +97,39 @@ html {
           border-radius: 6px;
           line-height: 40px;
           font-size: 16px;
-          color: #FFFFFF; }
-        .header .header-block .log-in .log-link .login-btn:hover {
+          color: #FFFFFF;
           cursor: pointer; }
 
+@media screen and (max-width: 1350px) {
+  .special-font {
+    font-size: 16px; } }
+@media screen and (max-width: 1170px) {
+  .special-font {
+    font-size: 12px; } }
+@media screen and (max-width: 645px) {
+  .main-description {
+    font-size: 16px; } }
 .hero {
   position: relative;
-  max-width: 1440px;
-  width: 100%;
-  background: url("/assets/images/image 134hero.png");
-  background-size: cover; }
+  background: url("/assets/images/hero-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
   .hero .hero-block {
+    max-width: 81.25%;
+    width: 100%;
     position: relative;
     z-index: 3;
-    padding: 185px 9.375% 140px 9.375%;
+    padding: 185px 0 140px 0;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .hero .hero-block .main-title {
       color: #FFFFFF; }
     .hero .hero-block .main-description {
+      max-width: 620px;
       margin-top: 24px;
       color: #FFFFFF;
       text-align: center;
@@ -143,12 +162,6 @@ html {
           color: #222222; }
           .hero .hero-block .search-menu .h-card .h-card-text .special-weight {
             font-weight: 500; }
-          @media screen and (max-width: 1350px) {
-            .hero .hero-block .search-menu .h-card .h-card-text .special-font {
-              font-size: 16px; } }
-          @media screen and (max-width: 1170px) {
-            .hero .hero-block .search-menu .h-card .h-card-text .special-font {
-              font-size: 12px; } }
       .hero .hero-block .search-menu .search-block {
         width: 23%;
         background: #19BCE4; }
