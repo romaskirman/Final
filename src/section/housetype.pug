@@ -3,36 +3,11 @@ section.housetype
         h2.house-title What are you looking for?
         .house-content
             .house-image
-                img.img-house(src="./assets/images/Rectangle 2181house-img.png" alt="skyscrapers")
+                img.img-house(src="./assets/images/house-img.png" alt="skyscrapers")
             .h-cards
-                a.link-house(href="#")
-                    .house-card
-                        .img-block
-                            img.house-logo(src="./assets/images/Group 3254first-logo.png")
-                        .text-block
-                            h5.card-title Family House
-                            +Card()
-                a.link-house(href="#")
-                    .house-card
-                        .img-block
-                            img.house-logo(src="./assets/images/Group 3255second-logo.png")
-                        .text-block
-                            h5.card-title Apartment
-                            +Card()
-                a.link-house(href="#")
-                    .house-card
-                        .img-block
-                            img.house-logo(src="./assets/images/Group 3252third-logo.png")
-                        .text-block
-                            h5.card-title Studio & Offices
-                            +Card()
-                a.link-house(href="#")
-                    .house-card
-                        .img-block
-                            img.house-logo(src="./assets/images/Group 3253fourth-logo.png")
-                        .text-block
-                            h5.card-title Villa & Condo
-                            +Card()
+                each card in cards
+                    +Card(card.img, card.title, card.description)
+
 
 
 

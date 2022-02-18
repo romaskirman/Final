@@ -1,25 +1,39 @@
 {
+  "aboutcards": [
+    {
+      "image": "./assets/images/support.png",
+      "title": "Free Consultation",
+      "paragraph": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit."
+    },
+
+    {
+      "image": "./assets/images/team.png",
+      "title": "Best Team members",
+      "paragraph": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit."
+    }
+  ],
+
   "cards": [
     {
-      "img": "./assets/images/Group 3254first-logo.png",
+      "img": "./assets/images/01logo.png",
       "title": "Family House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
 
     {
-      "img": "./assets/images/Group 3255second-logo.png",
+      "img": "./assets/images/02logo.png",
       "title": "Apartment",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
 
     {
-      "img": "./assets/images/Group 3252third-logo.png",
+      "img": "./assets/images/03logo.png",
       "title": "Studio & Offices",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
 
     {
-      "img": "./assets/images/Group 3253fourth-logo.png",
+      "img": "./assets/images/04logo.png",
       "title": "Villa & Condo",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     }

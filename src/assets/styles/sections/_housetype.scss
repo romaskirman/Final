@@ -3,8 +3,14 @@
   max-width: 1440px;
   width: 100%;
   background: $bg-housetype;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   .house-block{
-    padding: 75px 10%;
+    max-width: 80%;
+    width: 100%;
+    padding: 75px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

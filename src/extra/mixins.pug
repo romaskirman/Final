@@ -1,5 +1,17 @@
-mixin Card()
-    p.card-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus
+mixin About(image, title, paragraph)
+    .ab-card
+         img(src= image alt="about-icon")
+         h4.about-title= title
+         p.about-paragraph= paragraph
+
+mixin Card(img, title, description)
+    a.link-house(href="#")
+        .house-card
+            .img-block
+                img.house-logo(src= img)
+            .text-block
+                h5.card-title= title
+                p.card-descr= description
 
 
 
