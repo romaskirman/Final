@@ -47,4 +47,57 @@ a {
 html {
   font-family: 'Rubik', sans-serif; }
 
+.review {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #FFF8F7; }
+  .review .review-block {
+    max-width: 81.25%;
+    width: 100%;
+    padding: 97px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .review .review-block .review-title {
+      color: #222222;
+      line-height: 65px; }
+    .review .review-block .review-description {
+      color: #555555;
+      line-height: 27px;
+      margin-top: 16px; }
+    .review .review-block .card-container {
+      margin-top: 139px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .review .review-block .card-container .card-review {
+        width: 31.62%;
+        background: #FFFFFF;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .review .review-block .card-container .card-review .review-img {
+          position: absolute;
+          top: -79px;
+          max-width: 100%; }
+        .review .review-block .card-container .card-review .c-title {
+          color: #222222;
+          line-height: 28px;
+          margin-top: 81px; }
+        .review .review-block .card-container .card-review .review-stars {
+          margin-top: 8px; }
+        .review .review-block .card-container .card-review .review-paragraph {
+          max-width: 79.18%;
+          margin-top: 16px;
+          color: #555555;
+          line-height: 20px;
+          margin-bottom: 31px;
+          text-align: center; }
+
 /*# sourceMappingURL=style.css.map */

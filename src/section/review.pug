@@ -1,0 +1,7 @@
+section.review
+    .review-block
+        h2.review-title What People Say
+        h5.review-description Lorem ipsum dolor sit amet, consectetur
+        .card-container
+           each card in reviewcards
+            +Review(card.photo, card.title, card.stars, card.paragraph)

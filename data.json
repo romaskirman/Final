@@ -1,0 +1,24 @@
+{
+  "reviewcards": [
+    {
+      "photo": "./assets/images/first-man.png",
+      "title": "Williamsons",
+      "stars": "./assets/images/three-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+
+    {
+      "photo": "./assets/images/second-man.png",
+      "title": "Farhad Reja",
+      "stars": "./assets/images/four-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+
+    {
+      "photo": "./assets/images/third-man.png",
+      "title": "Peter sams",
+      "stars": "./assets/images/five-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    }
+  ]
+}
