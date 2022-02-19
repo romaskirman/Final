@@ -77,9 +77,15 @@ html {
     font-size: 13px; } }
 .popular {
   max-width: 1440px;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
   .popular .popular-block {
-    padding: 120px 9.375%;
+    max-width: 81.25%;
+    width: 100%;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -106,7 +112,7 @@ html {
             position: absolute;
             top: 62.96%;
             left: 22.97%;
-            background-image: url("../images/Rectangle 2191bangladesh-blur.png");
+            background-image: url("../images/bangladesh-blur.png");
             display: flex;
             flex-direction: column;
             align-items: center; }
@@ -135,13 +141,13 @@ html {
                 flex-direction: column;
                 align-items: center; }
               .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .jpn {
-                background-image: url("../images/Rectangle 2192japan-blur.png"); }
+                background-image: url("../images/japan-blur.png"); }
               .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .malaysia {
-                background-image: url("../images/Rectangle 2193malaysia-blur.png"); }
+                background-image: url("../images/malaysia-blur.png"); }
               .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .london {
-                background-image: url("../images/Rectangle 2194london-blur.png"); }
+                background-image: url("../images/london-blur.png"); }
               .popular .popular-block .cards-container .small-cards .card-row .link-popular-small .small-card .india {
-                background-image: url("../images/Rectangle 2195india-blur.png"); }
+                background-image: url("../images/india-blur.png"); }
         .popular .popular-block .cards-container .small-cards .card-row:last-child {
           margin-top: 3.377%; }
 
@@ -158,5 +164,85 @@ html {
   margin-top: 4%;
   margin-bottom: 8%;
   padding: 0 18.5%; }
+
+@media screen and (max-width: 1330px) {
+  .who-title {
+    font-size: 43px;
+    margin-top: 82px; }
+
+  .who-description {
+    font-size: 16px; } }
+@media screen and (max-width: 1210px) {
+  .who-title {
+    font-size: 37px;
+    margin-top: 72px; }
+
+  .who-description {
+    font-size: 14px; } }
+@media screen and (max-width: 1093px) {
+  .who-title {
+    font-size: 32px;
+    margin-top: 62px; }
+
+  .who-description {
+    font-size: 12px; } }
+.why-choose {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: #F8FDFE; }
+  .why-choose .text-block {
+    max-width: 50.77%;
+    width: 100%;
+    padding-left: 9.375%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .why-choose .text-block .who-title {
+      color: #222222;
+      line-height: 61px;
+      margin-top: 15.6%; }
+      @media screen and (max-width: 1330px) {
+        .why-choose .text-block .who-title {
+          line-height: 54px; } }
+      @media screen and (max-width: 1210px) {
+        .why-choose .text-block .who-title {
+          line-height: 47px; } }
+      @media screen and (max-width: 1093px) {
+        .why-choose .text-block .who-title {
+          line-height: 41px; } }
+    .why-choose .text-block .who-description {
+      color: #555555;
+      line-height: 30px;
+      margin-top: 3.4%; }
+      @media screen and (max-width: 1330px) {
+        .why-choose .text-block .who-description {
+          line-height: 26px; } }
+      @media screen and (max-width: 1210px) {
+        .why-choose .text-block .who-description {
+          line-height: 23px; } }
+      @media screen and (max-width: 1093px) {
+        .why-choose .text-block .who-description {
+          line-height: 20px; } }
+    .why-choose .text-block .who-btn {
+      background: #19BCE4;
+      margin-top: 6.7%;
+      border-radius: 6px; }
+      .why-choose .text-block .who-btn .who-link {
+        color: #FFFFFF; }
+        .why-choose .text-block .who-btn .who-link .who-btn-text {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          line-height: 24px;
+          padding: 16px 32px; }
+          .why-choose .text-block .who-btn .who-link .who-btn-text .margin-text {
+            margin-right: 12px; }
+  .why-choose .img-block .who-img {
+    max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

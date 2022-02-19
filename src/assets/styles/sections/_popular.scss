@@ -2,8 +2,14 @@
 .popular{
   max-width: 1440px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   .popular-block{
-    padding: 120px 9.375%;
+    max-width: 81.25%;
+    width: 100%;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +38,7 @@
             position: absolute;
             top: 62.96%;
             left: 22.97%;
-            background-image: url("../images/Rectangle 2191bangladesh-blur.png");
+            background-image: url("../images/bangladesh-blur.png");
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -65,19 +71,16 @@
                 align-items: center;
               }
               .jpn {
-                background-image: url("../images/Rectangle 2192japan-blur.png");
+                background-image: url("../images/japan-blur.png");
               }
-
               .malaysia {
-                background-image: url("../images/Rectangle 2193malaysia-blur.png");
+                background-image: url("../images/malaysia-blur.png");
               }
-
               .london {
-                background-image: url("../images/Rectangle 2194london-blur.png");
+                background-image: url("../images/london-blur.png");
               }
-
               .india {
-                background-image: url("../images/Rectangle 2195india-blur.png");
+                background-image: url("../images/india-blur.png");
               }
             }
           }

@@ -3,36 +3,16 @@ section.popular
         h2.popular-title Most Popular Places
         h5.popular-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         .cards-container
-            a.link-popular(href="#")
-                .big-card
-                    img.bg-position(src="./assets/images/Rectangle 2186bangladesh-bg.png" alt="bangladesh city")
-                    .big-card-blur
-                        h4.popular-card-title Bangladesh
-                        h5.popular-card-descr 50 Properties
+            each card in popularbigcard
+                +Popular1b(card.image, card.title, card.description)
             .small-cards
                 .card-row
-                    a.link-popular-small(href="#")
-                        .small-card
-                            img.bg-position(src="./assets/images/Rectangle 2187japan-bg.png" alt="japan country")
-                            .small-card-blur.jpn
-                                h4.popular-card-title Japan
-                                h5.popular-card-descr 50 Properties
-                    a.link-popular-small(href="#")
-                        .small-card
-                            img.bg-position(src="./assets/images/Rectangle 2188malaysia-bg.png" alt="malaysia country")
-                            .small-card-blur.malaysia
-                                h4.popular-card-title Malaysia
-                                h5.popular-card-descr 50 Properties
+                    each card in popularfirstsmall
+                        +Popular1s(card.image, card.title, card.description)
+                    each card in popularsecondsmall
+                        +Popular2s(card.image, card.title, card.description)
                 .card-row
-                    a.link-popular-small(href="#")
-                        .small-card
-                            img.bg-position(src="./assets/images/Rectangle 2189london-bg.png" alt="london city")
-                            .small-card-blur.london
-                                h4.popular-card-title London
-                                h5.popular-card-descr 50 Properties
-                    a.link-popular-small(href="#")
-                        .small-card
-                            img.bg-position(src="./assets/images/Rectangle 2190india-bg.png" alt="india country")
-                            .small-card-blur.india
-                                h4.popular-card-title India
-                                h5.popular-card-descr 50 Properties
+                     each card in popularthirdsmall
+                        +Popular3s(card.image, card.title, card.description)
+                     each card in popularfourthsmall
+                        +Popular4s(card.image, card.title, card.description)

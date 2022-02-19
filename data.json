@@ -1,0 +1,41 @@
+{
+  "popularbigcard": [
+    {
+      "image": "./assets/images/bangladesh-bg.png",
+      "title": "Bangladesh",
+      "description": "50 Properties"
+    }
+  ],
+
+  "popularfirstsmall": [
+    {
+      "image": "./assets/images/japan-bg.png",
+      "title": "Japan",
+      "description": "50 Properties"
+    }
+  ],
+
+  "popularsecondsmall": [
+    {
+      "image": "./assets/images/malaysia-bg.png",
+      "title": "Malaysia",
+      "description": "50 Properties"
+    }
+  ],
+
+  "popularthirdsmall": [
+    {
+      "image": "./assets/images/london-bg.png",
+      "title": "London",
+      "description": "50 Properties"
+    }
+  ],
+
+  "popularfourthsmall": [
+    {
+    "image": "./assets/images/india-bg.png",
+    "title": "India",
+    "description": "50 Properties"
+    }
+  ]
+}
