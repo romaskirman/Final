@@ -1,0 +1,73 @@
+@import "./media/_mediafooter";
+.big-footer{
+  max-width: 1440px;
+  width: 100%;
+  background: $bg-footer;
+  .subscribe{
+    position: relative;
+    width: 100%;
+    background: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 294px;
+    .subscribe-block{
+      position: absolute;
+      top: 120px;
+      max-width: 80%;
+      width: 100%;
+      border-radius: 24px;
+      background: $btn-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sub-title{
+        color: $white;
+        margin-top: 48px;
+      }
+      .sub-form{
+        width: 62.5%;
+        margin-top: 40px;
+        background: $white;
+        margin-bottom: 52px;
+        padding: 8px;
+        border-radius: 6px;
+        .sub-container{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .email-field {
+            width: 83.33%;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $gray;
+            padding: 16px;
+            border: none;
+            outline: none;
+          }
+          .sub-btn{
+            background: $btn-color;
+            border-radius: 6px;
+            border: 1px solid $btn-color;
+            .a-sub-btn{
+              color: $white;
+              .sub-btn-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 27px;
+                padding: 9.5px 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    height: 491px;
+  }
+}

@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -54,7 +55,8 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: #FFF8F7; }
+  background: #FFF8F7;
+  margin-top: 120px; }
   .review .review-block {
     max-width: 81.25%;
     width: 100%;
@@ -63,6 +65,7 @@ html {
     flex-direction: column;
     align-items: center; }
     .review .review-block .review-title {
+      font-family: 'Noto Sans', sans-serif;
       color: #222222;
       line-height: 65px; }
     .review .review-block .review-description {
@@ -99,5 +102,76 @@ html {
           line-height: 20px;
           margin-bottom: 31px;
           text-align: center; }
+
+@media screen and (max-width: 1267px) {
+  .sub-title {
+    font-size: 36px; } }
+@media screen and (max-width: 1138px) {
+  .sub-title {
+    font-size: 32px; } }
+@media screen and (max-width: 1024px) {
+  .sub-title {
+    font-size: 25px; } }
+.big-footer {
+  max-width: 1440px;
+  width: 100%;
+  background: #F8FDFE; }
+  .big-footer .subscribe {
+    position: relative;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 294px; }
+    .big-footer .subscribe .subscribe-block {
+      position: absolute;
+      top: 120px;
+      max-width: 80%;
+      width: 100%;
+      border-radius: 24px;
+      background: #19BCE4;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .big-footer .subscribe .subscribe-block .sub-title {
+        color: #FFFFFF;
+        margin-top: 48px; }
+      .big-footer .subscribe .subscribe-block .sub-form {
+        width: 62.5%;
+        margin-top: 40px;
+        background: #FFFFFF;
+        margin-bottom: 52px;
+        padding: 8px;
+        border-radius: 6px; }
+        .big-footer .subscribe .subscribe-block .sub-form .sub-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .big-footer .subscribe .subscribe-block .sub-form .sub-container .email-field {
+            width: 83.33%;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #555555;
+            padding: 16px;
+            border: none;
+            outline: none; }
+          .big-footer .subscribe .subscribe-block .sub-form .sub-container .sub-btn {
+            background: #19BCE4;
+            border-radius: 6px;
+            border: 1px solid #19BCE4; }
+            .big-footer .subscribe .subscribe-block .sub-form .sub-container .sub-btn .a-sub-btn {
+              color: #FFFFFF; }
+              .big-footer .subscribe .subscribe-block .sub-form .sub-container .sub-btn .a-sub-btn .sub-btn-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 27px;
+                padding: 9.5px 22px; }
+  .big-footer .footer {
+    height: 491px; }
 
 /*# sourceMappingURL=style.css.map */
