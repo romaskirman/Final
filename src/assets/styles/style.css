@@ -112,6 +112,24 @@ html {
 @media screen and (max-width: 1024px) {
   .sub-title {
     font-size: 25px; } }
+@media screen and (max-width: 1140px) {
+  .footer-description {
+    font-size: 16px; }
+
+  .link {
+    font-size: 16px; } }
+@media screen and (max-width: 1010px) {
+  .footer-description {
+    font-size: 15px; }
+
+  .link {
+    font-size: 15px; } }
+@media screen and (max-width: 1420px) {
+  .link-contact {
+    font-size: 14px; } }
+@media screen and (max-width: 1190px) {
+  .link-contact {
+    font-size: 11.5px; } }
 .big-footer {
   max-width: 1440px;
   width: 100%;
@@ -172,6 +190,92 @@ html {
                 line-height: 27px;
                 padding: 9.5px 22px; }
   .big-footer .footer {
-    height: 491px; }
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 189px;
+    padding-bottom: 68px; }
+    .big-footer .footer .footer-block {
+      max-width: 81.25%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .big-footer .footer .footer-block .building-footer {
+        width: 28.2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .big-footer .footer .footer-block .building-footer .building-block {
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .big-footer .footer .footer-block .building-footer .building-block .link-logo {
+            color: #02012B;
+            margin-left: 6px;
+            margin-top: 6px; }
+        .big-footer .footer .footer-block .building-footer .footer-description {
+          margin-top: 15px;
+          color: #555555;
+          line-height: 27px; }
+        .big-footer .footer .footer-block .building-footer .social-block {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-top: 37px; }
+          .big-footer .footer .footer-block .building-footer .social-block .social-link {
+            margin-right: 18px; }
+          .big-footer .footer .footer-block .building-footer .social-block .social-link:last-child {
+            margin-right: 0; }
+      .big-footer .footer .footer-block .footer-links {
+        width: 15.39%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .big-footer .footer .footer-block .footer-links .footer-title {
+          color: #222222;
+          line-height: 28px;
+          margin-top: 8px; }
+        .big-footer .footer .footer-block .footer-links .column-links {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px; }
+          .big-footer .footer .footer-block .footer-links .column-links .link {
+            line-height: 27px;
+            color: #555555;
+            margin-top: 6px; }
+          .big-footer .footer .footer-block .footer-links .column-links .link:first-child {
+            margin-top: 0; }
+      .big-footer .footer .footer-block .contact-footer {
+        width: 17.53%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .big-footer .footer .footer-block .contact-footer .contact-title {
+          line-height: 28px;
+          color: #222222;
+          margin-top: 8px; }
+        .big-footer .footer .footer-block .contact-footer .contact-links {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px; }
+          .big-footer .footer .footer-block .contact-footer .contact-links .contact-block {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 6px; }
+            .big-footer .footer .footer-block .contact-footer .contact-links .contact-block .img-contact {
+              cursor: pointer; }
+            .big-footer .footer .footer-block .contact-footer .contact-links .contact-block .link-contact {
+              line-height: 27px;
+              color: #555555;
+              margin-left: 8px; }
+          .big-footer .footer .footer-block .contact-footer .contact-links .contact-block:first-child {
+            margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */

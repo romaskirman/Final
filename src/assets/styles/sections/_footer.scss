@@ -68,6 +68,113 @@
     }
   }
   .footer{
-    height: 491px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 189px;
+    padding-bottom: 68px;
+    .footer-block{
+      max-width: 81.25%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      .building-footer{
+        width: 28.2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .building-block{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .link-logo{
+            color: $darkblue;
+            margin-left: 6px;
+            margin-top: 6px;
+          }
+        }
+        .footer-description{
+          margin-top: 15px;
+          color: $gray;
+          line-height: 27px;
+        }
+        .social-block{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-top: 37px;
+          .social-link{
+            margin-right: 18px;
+          }
+          .social-link:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+      .footer-links{
+        width: 15.39%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .footer-title{
+          color: $black;
+          line-height: 28px;
+          margin-top: 8px;
+        }
+        .column-links{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px;
+          .link{
+            line-height: 27px;
+            color: $gray;
+            margin-top: 6px;
+          }
+          .link:first-child{
+            margin-top: 0;
+          }
+        }
+      }
+      .contact-footer{
+        width: 17.53%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .contact-title{
+          line-height: 28px;
+          color: $black;
+          margin-top: 8px;
+        }
+        .contact-links{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px;
+          .contact-block{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 6px;
+            .img-contact{
+              cursor: pointer;
+            }
+            .link-contact{
+              line-height: 27px;
+              color: $gray;
+              margin-left: 8px;
+            }
+
+          }
+          .contact-block:first-child{
+            margin-top: 0;
+          }
+        }
+      }
+    }
   }
 }
