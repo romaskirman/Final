@@ -2,7 +2,13 @@
   .popular-card-title{
     font-size: 19.2px;
   }
+  .popular-bigcard-title{
+    font-size: 19.2px;
+  }
   .popular-card-descr{
+    font-size: 16px;
+  }
+  .popular-smallcard-descr{
     font-size: 16px;
   }
 }
@@ -16,8 +22,14 @@
   .popular-card-title{
     font-size: 16.8px;
   }
+  .popular-bigcard-title{
+    font-size: 16.8px;
+  }
   .popular-card-descr{
     font-size: 14px;
+  }
+  .popular-smallcard-descr{
+    font-size: 13.9px;
   }
 }
 @media screen and (max-width: 1024px){
@@ -28,6 +40,9 @@
     font-size: 14px;
   }
   .popular-card-descr{
+    font-size: 13px;
+  }
+  .popular-smallcard-descr{
     font-size: 13px;
   }
 }
