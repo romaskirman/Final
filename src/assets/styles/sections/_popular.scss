@@ -1,119 +1,90 @@
 @import "./media/_mediapopular";
-.popular{
+.popular {
   max-width: 1440px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  .popular-block{
+  .popular-block {
     max-width: 81.25%;
     width: 100%;
     padding: 120px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .popular-title{
+    .popular-title {
       color: $black;
       line-height: 61px;
     }
-    .popular-descr{
+    .popular-descr {
       color: $gray;
       line-height: 27px;
       margin-top: 16px;
     }
-    .cards-container{
+    .wrap{
+      display: grid;
+      grid-template-areas:
+      'b s1 s2'
+      'b s3 s4';
       width: 100%;
+      gap: 25px;
       margin-top: 40px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      .link-popular {
-        width: 31.63%;
-        .big-card {
-          position: relative;
-          .big-card-blur {
-            position: absolute;
-            top: 62.96%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 0 8.5%;
-            background-image: url("../images/bangladesh-blur.png");
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-          }
+      .popular-grid{
+        position: relative;
+
+        &:nth-child(1){
+          grid-area: b;
         }
-      }
-      .small-cards{
-        width: 65.82%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        .card-row{
+        &:nth-child(2){
+          grid-area: s1;
+        }
+        &:nth-child(3){
+          grid-area: s2;
+        }
+        &:nth-child(4){
+          grid-area: s3;
+        }
+        &:nth-child(5){
+          grid-area: s4;
+        }
+        img{
           width: 100%;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
-          .link-popular-small{
-            width: 48.05%;
-            .small-card {
-              position: relative;
-              .small-card-blur{
-                position: absolute;
-                top: 56.07%;
-                left: 50%;
-                padding: 0 14%;
-                transform: translateX(-50%);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-              }
-              .jpn {
-                background-image: url("../images/japan-blur.png");
-              }
-              .malaysia {
-                background-image: url("../images/malaysia-blur.png");
-              }
-              .london {
-                background-image: url("../images/london-blur.png");
-              }
-              .india {
-                background-image: url("../images/india-blur.png");
-              }
-            }
-          }
+          height: 100%;
         }
-        .card-row:last-child{
-          margin-top: 3.377%;
+        &:hover &-box{
+          //opacity: 1;
+        }
+        &-box{
+          transition: all 0.3s ease;
+          //opacity: 0;
+          width: 54.05%;
+          padding: 0 10%;
+          background: $bg-blur;
+          backdrop-filter: blur(10px);
+          position: absolute;
+          bottom: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+          &.big{
+            bottom: 20%;
+          }
         }
       }
     }
   }
 }
-.bg-position{
-  max-width: 100%;
-}
+
 .popular-card-title{
   color: $white;
-  margin-top: 12.1%;
-}
-.popular-bigcard-title{
-  color: $white;
-  margin-top: 9%;
+  margin-top: 9.4%;
+  text-align: center;
 }
 .popular-card-descr{
-  width: 131%;
+  width: 100%;
   color: $properties;
-  margin-top: 8.1%;
-  margin-bottom: 16.1%;
+  margin-top: 6.3%;
+  margin-bottom: 12.6%;
+  text-align: center;
 }
-.popular-smallcard-descr{
-  width: 92.4%;
-  color: $properties;
-  margin-top: 6.1%;
-  margin-bottom: 11.3%;
-}
+

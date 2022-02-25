@@ -2,7 +2,10 @@ section.popular
     .popular-block
         h2.popular-title Most Popular Places
         h5.popular-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        .cards-container
+        .wrap
+            each card in places
+                +Popular(card.image, card.title, card.description)
+        //.cards-container
             each card in popularbigcard
                 +Popular1b(card.image, card.title, card.description)
             .small-cards
@@ -16,3 +19,5 @@ section.popular
                         +Popular3s(card.image, card.title, card.description)
                      each card in popularfourthsmall
                         +Popular4s(card.image, card.title, card.description)
+
+

@@ -1,41 +1,34 @@
 {
-  "popularbigcard": [
+  "places": [
     {
       "image": "./assets/images/bangladesh-bg.png",
       "title": "Bangladesh",
-      "description": "50 Properties"
-    }
-  ],
-
-  "popularfirstsmall": [
+      "description": "50 Properties",
+      "isBig": true
+    },
     {
       "image": "./assets/images/japan-bg.png",
       "title": "Japan",
-      "description": "50 Properties"
-    }
-  ],
-
-  "popularsecondsmall": [
+      "description": "50 Properties",
+      "isBig": false
+    },
     {
       "image": "./assets/images/malaysia-bg.png",
       "title": "Malaysia",
-      "description": "50 Properties"
-    }
-  ],
-
-  "popularthirdsmall": [
+      "description": "50 Properties",
+      "isBig": false
+    },
     {
       "image": "./assets/images/london-bg.png",
       "title": "London",
-      "description": "50 Properties"
-    }
-  ],
-
-  "popularfourthsmall": [
+      "description": "50 Properties",
+      "isBig": false
+    },
     {
-    "image": "./assets/images/india-bg.png",
-    "title": "India",
-    "description": "50 Properties"
+      "image": "./assets/images/india-bg.png",
+      "title": "India",
+      "description": "50 Properties",
+      "isBig": false
     }
   ]
 }
