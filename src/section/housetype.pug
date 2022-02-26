@@ -1,0 +1,15 @@
+section.housetype
+    .house-block
+        h2.house-title What are you looking for?
+        .house-content
+            .house-image
+                img.img-house(src="./assets/images/house-img.png" alt="skyscrapers")
+            .h-cards
+                each card in cards
+                    +Card(card.img, card.title, card.description)
+
+
+
+
+
+

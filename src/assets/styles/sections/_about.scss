@@ -1,0 +1,101 @@
+@import "./media/_mediaabout";
+.about{
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .about-block{
+    max-width: 80%;
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .img-container{
+      width: 48.4375%;
+      .big-about-img {
+        width: 93.19%;
+        position: relative;
+        .fix-big-img{
+          max-width: 100%;
+        }
+      }
+      .small-about-img {
+        position: absolute;
+        top: 78.93%;
+        left: 61.15%;
+        .fix-small-img{
+          max-width: 115%;
+        }
+      }
+    }
+    .description-container{
+      width: 47.9166%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .about-smalltitle{
+        color: $darkblue;
+        line-height: 27px;
+      }
+      .about-bigtitle{
+        color: $black;
+        margin-top: 10px;
+        line-height: 61px;
+        @media screen and (max-width: 1410px){line-height: 51px;}
+        @media screen and (max-width: 1175px){line-height: 40px;}
+      }
+      .about-description{
+        color: $gray;
+        line-height: 27px;
+        margin-top: 24px;
+        @media screen and (max-width: 1250px){line-height: 21.6px;}
+        @media screen and (max-width: 1000px){line-height: 18.9px;}
+      }
+      .about-cards{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        .ab-card{
+          width: 42.35%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .about-title{
+            margin-top: 24px;
+            line-height: 28px;
+            color: $black;
+          }
+          .about-paragraph{
+            margin-top: 16px;
+            line-height: 17px;
+            color: $gray;
+          }
+        }
+      }
+      .about-btn{
+        background: $btn-color;
+        margin-top: 40px;
+        border-radius: 6px;
+        .about-link{
+          color: $white;
+          .explore-now{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 24px;
+            padding: 16px 32px;
+          }
+        }
+      }
+    }
+  }
+}
