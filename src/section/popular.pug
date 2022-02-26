@@ -4,7 +4,7 @@ section.popular
         h5.popular-descr Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         .wrap
             each card in places
-                +Popular(card.image, card.title, card.description)
+                +Popular(card.image, card.title, card.description, card.isBig)
         //.cards-container
             each card in popularbigcard
                 +Popular1b(card.image, card.title, card.description)

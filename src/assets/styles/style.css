@@ -117,14 +117,17 @@ html {
         .popular .popular-block .wrap .popular-grid img {
           width: 100%;
           height: 100%; }
+        .popular .popular-block .wrap .popular-grid:hover .popular-grid-box {
+          opacity: 1; }
         .popular .popular-block .wrap .popular-grid-box {
           transition: all 0.3s ease;
+          opacity: 0;
           width: 54.05%;
           padding: 0 10%;
           background: rgba(0, 96, 119, 0.02);
           backdrop-filter: blur(10px);
           position: absolute;
-          bottom: 20%;
+          bottom: 9%;
           left: 50%;
           transform: translateX(-50%); }
           .popular .popular-block .wrap .popular-grid-box.big {
