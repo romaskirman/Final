@@ -21,6 +21,18 @@
         color: $darkblue;
         margin-left: 6px;
         margin-top: 6px;
+        @keyframes swing {
+          15% {transform: translateX(6px);}
+          30% {transform: translateX(-6px);}
+          40% {transform: translateX(4px);}
+          50% {transform: translateX(-4px);}
+          65% {transform: translateX(2px);}
+          100% {transform: translateX(0);}
+        }
+      }
+      .logo-link:hover {
+        animation: swing 1s ease;
+        animation-iteration-count: 1;
       }
     }
     .menu{
@@ -32,6 +44,17 @@
         line-height: 20px;
         .menu-link{
           color: $darkblue;
+        }
+        .menu-link:after {
+          background-color: $anim-head-link;
+          display: block;
+          content: "";
+          height: 1px;
+          width: 0;
+          transition: width .3s ease-in-out;
+        }
+        .menu-link:hover:after, .menu-link:focus:after{
+          width: 100%;
         }
       }
       .menu-list:last-child{
@@ -55,6 +78,11 @@
           font-size: 16px;
           color: $white;
           cursor: pointer;
+          transition: all 0.3s ease;
+        }
+        .login-btn:hover{
+          border-radius: 70%;
+          transition: all 0.3s ease;
         }
       }
     }

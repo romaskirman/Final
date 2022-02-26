@@ -2,13 +2,13 @@ mixin Header(link, title)
     li.menu-list
         a.menu-link(href= link)= title
 
-mixin Hero(title, image, description)
+mixin Hero(title, image, description, isPrice=false)
     .h-card
         .h-card-title
             p.h-card-paragraph= title
             img.strelka(src= image, alt="strelka")
         .h-card-text
-            h5.special-weight= description
+            h5.special-weight(class= isPrice ? 'special-font' : '')= description
 
 mixin About(image, title, paragraph)
     .ab-card

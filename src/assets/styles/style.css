@@ -77,6 +77,22 @@ html {
         color: #02012B;
         margin-left: 6px;
         margin-top: 6px; }
+@keyframes swing {
+  15% {
+    transform: translateX(6px); }
+  30% {
+    transform: translateX(-6px); }
+  40% {
+    transform: translateX(4px); }
+  50% {
+    transform: translateX(-4px); }
+  65% {
+    transform: translateX(2px); }
+  100% {
+    transform: translateX(0); } }
+      .header .header-block .logo .logo-link:hover {
+        animation: swing 1s ease;
+        animation-iteration-count: 1; }
     .header .header-block .menu {
       display: flex;
       flex-direction: row;
@@ -86,6 +102,15 @@ html {
         line-height: 20px; }
         .header .header-block .menu .menu-list .menu-link {
           color: #02012B; }
+        .header .header-block .menu .menu-list .menu-link:after {
+          background-color: purple;
+          display: block;
+          content: "";
+          height: 1px;
+          width: 0;
+          transition: width .3s ease-in-out; }
+        .header .header-block .menu .menu-list .menu-link:hover:after, .header .header-block .menu .menu-list .menu-link:focus:after {
+          width: 100%; }
       .header .header-block .menu .menu-list:last-child {
         margin-right: 0; }
     .header .header-block .log-in {
@@ -104,7 +129,11 @@ html {
           line-height: 40px;
           font-size: 16px;
           color: #FFFFFF;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: all 0.3s ease; }
+        .header .header-block .log-in .log-link .login-btn:hover {
+          border-radius: 70%;
+          transition: all 0.3s ease; }
 
 @media screen and (max-width: 1350px) {
   .main-title {
