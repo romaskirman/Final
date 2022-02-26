@@ -5,7 +5,6 @@
       "title": "Free Consultation",
       "paragraph": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit."
     },
-
     {
       "image": "./assets/images/team.png",
       "title": "Best Team members",
@@ -19,23 +18,53 @@
       "title": "Family House",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
-
     {
       "img": "./assets/images/02logo.png",
       "title": "Apartment",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
-
     {
       "img": "./assets/images/03logo.png",
       "title": "Studio & Offices",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
     },
-
     {
       "img": "./assets/images/04logo.png",
       "title": "Villa & Condo",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    }
+  ],
+
+  "places": [
+    {
+      "image": "./assets/images/bangladesh-bg.png",
+      "title": "Bangladesh",
+      "description": "50 Properties",
+      "isBig": true
+    },
+    {
+      "image": "./assets/images/japan-bg.png",
+      "title": "Japan",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/malaysia-bg.png",
+      "title": "Malaysia",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/london-bg.png",
+      "title": "London",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/india-bg.png",
+      "title": "India",
+      "description": "50 Properties",
+      "isBig": false
     }
   ]
 }

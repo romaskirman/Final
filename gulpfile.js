@@ -41,6 +41,12 @@ function css() {
         .pipe(browserSync.stream())
 }
 
+function js() {
+    return src('src/script.js')
+        .pipe(dest('build'))
+        .pipe(browserSync.stream())
+}
+
 function images() {
     return src('src/assets/images/**/*')
         .pipe(imagemin())
@@ -64,10 +70,11 @@ function startWatch() {
     watch('src/assets/styles/**/*.scss', css)
     watch('src/assets/images/**/*', images)
     watch('src/assets/fonts/**/*', fonts)
+    watch('src/**/*.js', js)
 }
 
-exports.dev = parallel(browsersync, startWatch, html, images, fonts, css)
-exports.build = series(clear, parallel(html, images, fonts, css))
+exports.dev = parallel(browsersync, startWatch, html, images, fonts, css, js)
+exports.build = series(clear, parallel(html, images, fonts, css, js))
 
 
-exports.default = series(html, images, fonts, css)
+exports.default = series(html, images, fonts, css, js)

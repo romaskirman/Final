@@ -1,3 +1,4 @@
+
 mixin About(image, title, paragraph)
     .ab-card
          img(src= image alt="about-icon")
@@ -13,6 +14,12 @@ mixin Card(img, title, description)
                 h5.card-title= title
                 p.card-descr= description
 
+mixin Popular(image, title, description, isBig=false)
+    a.popular-grid(href="#")
+        img(src= image alt="country")
+        .popular-grid-box(class= isBig ? 'big' : '')
+            h4.popular-card-title= title
+            h5.popular-card-descr= description
 
 
 
@@ -25,12 +32,5 @@ mixin Card(img, title, description)
 
 
 
-//mixin Card(title, description, link, logo= 'none', power)
-    .card
-        .header
-            .card_logo= logo
-            h3.card_title= title
-        p.card_descr= description
-        h1.card_power(class= power > 70 ? 'card_power-red' : 'card_power-green') Power #{power}
-        a.card_link(href= link) Read More
+
 
