@@ -5,19 +5,5 @@ section.popular
         .wrap
             each card in places
                 +Popular(card.image, card.title, card.description, card.isBig)
-        //.cards-container
-            each card in popularbigcard
-                +Popular1b(card.image, card.title, card.description)
-            .small-cards
-                .card-row
-                    each card in popularfirstsmall
-                        +Popular1s(card.image, card.title, card.description)
-                    each card in popularsecondsmall
-                        +Popular2s(card.image, card.title, card.description)
-                .card-row
-                     each card in popularthirdsmall
-                        +Popular3s(card.image, card.title, card.description)
-                     each card in popularfourthsmall
-                        +Popular4s(card.image, card.title, card.description)
 
 
