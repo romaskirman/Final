@@ -5,16 +5,8 @@ header.header
             a.logo-link(href="#") Building
         nav
             ul.menu
-                li.menu-list
-                    a.menu-link(href="#") Home
-                li.menu-list
-                    a.menu-link(href="#") Services
-                li.menu-list
-                    a.menu-link(href="#") About Us
-                li.menu-list
-                    a.menu-link(href="#") Properties
-                li.menu-list
-                    a.menu-link(href="#") Contact
+                each link in links
+                    +Header(link.link, link.title)
         .log-in
             a.log-link(href="#")
                 button.login-btn(type="submit") Log In

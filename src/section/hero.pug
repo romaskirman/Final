@@ -3,24 +3,8 @@ section.hero
         h1.main-title Find Your Dream House
         h5.main-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra posuere sem purus enim eleifend habitant arcu, sed.
         .search-menu
-            .h-card
-                .h-card-title
-                    p.h-card-paragraph Location
-                    img.strelka(src="./assets/images/Group 3221strelka-vniz.png", alt="strelka")
-                .h-card-text
-                    h5.special-weight California
-            .h-card
-                .h-card-title
-                    p.h-card-paragraph Properties
-                    img.strelka(src="./assets/images/Group 3221strelka-vniz.png", alt="strelka")
-                .h-card-text
-                    h5.special-weight Delux
-            .h-card
-                .h-card-title
-                    p.h-card-paragraph Price
-                    img.strelka(src="./assets/images/Group 3221strelka-vniz.png", alt="strelka")
-                .h-card-text
-                    h5.special-weight.special-font $10,000-$120,000
+            each card in herocards
+                +Hero(card.title, card.image, card.description)
             .search-block
                 a.search-link(href="#")
                     h5.search-text Search

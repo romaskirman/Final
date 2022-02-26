@@ -1,4 +1,45 @@
 {
+  "links": [
+    {
+      "link": "#",
+      "title": "Home"
+    },
+    {
+      "link": "#",
+      "title": "Services"
+    },
+    {
+      "link": "#",
+      "title": "About Us"
+    },
+    {
+      "link": "#",
+      "title": "Properties"
+    },
+    {
+      "link": "#",
+      "title": "Contact"
+    }
+  ],
+
+  "herocards": [
+    {
+      "title": "Location",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "California"
+    },
+    {
+      "title": "Properties",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "Delux"
+    },
+    {
+      "title": "Price",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "$10,000-$120,000"
+    }
+  ],
+
   "aboutcards": [
     {
       "image": "./assets/images/support.png",
@@ -65,6 +106,66 @@
       "title": "India",
       "description": "50 Properties",
       "isBig": false
+    }
+  ],
+
+  "reviewcards": [
+    {
+      "photo": "./assets/images/first-man.png",
+      "title": "Williamsons",
+      "stars": "./assets/images/three-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+    {
+      "photo": "./assets/images/second-man.png",
+      "title": "Farhad Reja",
+      "stars": "./assets/images/four-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+    {
+      "photo": "./assets/images/third-man.png",
+      "title": "Peter sams",
+      "stars": "./assets/images/five-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    }
+  ],
+
+  "footer": [
+    {
+      "title": "Home",
+      "firstlink": "Process",
+      "secondlink": "Listing",
+      "thirdlink": "Popular Property",
+      "fourthlink": "Our agents"
+    },
+    {
+      "title": "Services",
+      "firstlink": "Site map",
+      "secondlink": "Property type",
+      "thirdlink": "Terms and conditions",
+      "fourthlink": "Privacy policy"
+    },
+    {
+      "title": "About",
+      "firstlink": "About us",
+      "secondlink": "Who choose us?",
+      "thirdlink": "Events",
+      "fourthlink": "Blog"
+    }
+  ],
+
+  "contact": [
+    {
+      "image": "./assets/images/phone.png",
+      "link": "+888 561 258"
+    },
+    {
+      "image": "./assets/images/gmail.png",
+      "link": "webmaile@gmail.com"
+    },
+    {
+      "image": "./assets/images/playstore.png",
+      "link": "Google Play"
     }
   ]
 }

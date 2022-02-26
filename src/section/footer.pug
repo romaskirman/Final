@@ -1,0 +1,26 @@
+footer.big-footer
+    section.subscribe
+        .subscribe-block
+            h3.sub-title For Daily Update Subscribe Now
+            form.sub-form
+                .sub-container
+                    input.email-field(type="search" placeholder="Enter Your Mail..")
+                    button.sub-btn(type="submit")
+                        a.a-sub-btn(href="#")
+                            h6.sub-btn-text Subscribe
+    section.footer
+        .footer-block
+            .building-footer
+                .building-block
+                    a.link-house(href="#")
+                        img.building-logo(src="./assets/images/house-logo.png" alt="house")
+                    a.link-logo(href="#") Building
+                h6.footer-description Lorem ipsum dolor sit amet, consectet adipiscing elit. Quam turpis sed ut fam tortor pharetra. Lorem auctor congue pellentesque facilisis diam
+                +Social()
+            each column in footer
+                +Footer(column.title, column.firstlink, column.secondlink, column.thirdlink, column.fourthlink)
+            .contact-footer
+                h4.contact-title Contact
+                .contact-links
+                    each block in contact
+                        +Contact(block.image, block.link)

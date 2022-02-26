@@ -1,3 +1,14 @@
+mixin Header(link, title)
+    li.menu-list
+        a.menu-link(href= link)= title
+
+mixin Hero(title, image, description)
+    .h-card
+        .h-card-title
+            p.h-card-paragraph= title
+            img.strelka(src= image, alt="strelka")
+        .h-card-text
+            h5.special-weight= description
 
 mixin About(image, title, paragraph)
     .ab-card
@@ -21,7 +32,38 @@ mixin Popular(image, title, description, isBig=false)
             h4.popular-card-title= title
             h5.popular-card-descr= description
 
+mixin Review(photo, title, stars, paragraph)
+    .card-review
+        img.review-img(src= photo alt="man")
+        h4.c-title= title
+        img.review-stars(src= stars alt="stars")
+        p.review-paragraph= paragraph
 
+
+mixin Footer(title, firstlink, secondlink, thirdlink, fourthlink)
+    .footer-links
+        h4.footer-title= title
+        .column-links
+            a.link(href="#")= firstlink
+            a.link(href="#")= secondlink
+            a.link(href="#")= thirdlink
+            a.link(href="#")= fourthlink
+
+mixin Social()
+    .social-block
+        a.social-link(href="#")
+            include ../extra/svg/facebook
+        a.social-link(href="#")
+            include ../extra/svg/twitter
+        a.social-link(href="#")
+            include ../extra/svg/instagram
+        a.social-link(href="#")
+            include ../extra/svg/linkedin
+
+mixin Contact(image, link)
+    .contact-block
+        img.img-contact(src= image)
+        a.link-contact(href="#")= link
 
 
 

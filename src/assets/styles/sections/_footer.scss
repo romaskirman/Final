@@ -1,0 +1,180 @@
+@import "./media/_mediafooter";
+.big-footer{
+  max-width: 1440px;
+  width: 100%;
+  background: $bg-footer;
+  .subscribe{
+    position: relative;
+    width: 100%;
+    background: $white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 294px;
+    .subscribe-block{
+      position: absolute;
+      top: 120px;
+      max-width: 80%;
+      width: 100%;
+      border-radius: 24px;
+      background: $btn-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .sub-title{
+        color: $white;
+        margin-top: 48px;
+      }
+      .sub-form{
+        width: 62.5%;
+        margin-top: 40px;
+        background: $white;
+        margin-bottom: 52px;
+        padding: 8px;
+        border-radius: 6px;
+        .sub-container{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .email-field {
+            width: 83.33%;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $gray;
+            padding: 16px;
+            border: none;
+            outline: none;
+          }
+          .sub-btn{
+            background: $btn-color;
+            border-radius: 6px;
+            border: 1px solid $btn-color;
+            .a-sub-btn{
+              color: $white;
+              .sub-btn-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                line-height: 27px;
+                padding: 9.5px 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 189px;
+    padding-bottom: 68px;
+    .footer-block{
+      max-width: 81.25%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      .building-footer{
+        width: 28.2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .building-block{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .link-logo{
+            color: $darkblue;
+            margin-left: 6px;
+            margin-top: 6px;
+          }
+        }
+        .footer-description{
+          margin-top: 15px;
+          color: $gray;
+          line-height: 27px;
+        }
+        .social-block{
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          margin-top: 37px;
+          .social-link{
+            margin-right: 18px;
+          }
+          .social-link:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+      .footer-links{
+        width: 15.39%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .footer-title{
+          color: $black;
+          line-height: 28px;
+          margin-top: 8px;
+        }
+        .column-links{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px;
+          .link{
+            line-height: 27px;
+            color: $gray;
+            margin-top: 6px;
+          }
+          .link:first-child{
+            margin-top: 0;
+          }
+        }
+      }
+      .contact-footer{
+        width: 17.53%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .contact-title{
+          line-height: 28px;
+          color: $black;
+          margin-top: 8px;
+        }
+        .contact-links{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 24px;
+          .contact-block{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 6px;
+            .img-contact{
+              cursor: pointer;
+            }
+            .link-contact{
+              line-height: 27px;
+              color: $gray;
+              margin-left: 8px;
+            }
+
+          }
+          .contact-block:first-child{
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
