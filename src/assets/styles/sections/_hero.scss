@@ -1,7 +1,7 @@
 @import "./media/_mediahero";
 .hero{
   position: relative;
-  background: url('/assets/images/new-hero.png');
+  background: url('/assets/images/background.png');
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -39,16 +39,30 @@
         width: 23%;
         padding: 10px 30px;
         border: 0.5px solid $card-brd;
+        transition: all 0.3s ease;
         .h-card-title{
           display: flex;
           flex-direction: row;
           align-items: center;
+          &:hover{
+            .h-card-paragraph{
+              color: $hero-p;
+              transition: all 0.3s ease;
+            }
+            .strelka{
+              transition: all 0.3s ease;
+              transform: rotate(-90deg);
+            }
+          }
           .h-card-paragraph{
+            transition: all 0.3s ease;
             margin-right: 6px;
             color: $gray;
-          }
-          .strelka:hover{
             cursor: pointer;
+          }
+          .strelka{
+            cursor: pointer;
+            transition: all 0.3s ease;
           }
         }
         .h-card-text{
@@ -60,10 +74,25 @@
           }
         }
       }
+      .h-card:hover{
+        background: $hero-card;
+        transition: all 0.3s ease;
+      }
       .search-block{
         width: 23%;
         background: $btn-color;
+        transition: all 0.3s ease;
+        &:hover {
+          transition: all 0.3s ease;
+          transform: skew(-10deg);
+          background: $hero-btn;
+          .search-link {
+            transition: all 0.3s ease;
+            color: $hero-txt;
+          }
+        }
         .search-link{
+          transition: all 0.3s ease;
           color: $white;
           .search-text{
             display: flex;

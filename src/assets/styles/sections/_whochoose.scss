@@ -34,7 +34,33 @@
       background: $btn-color;
       margin-top: 6.7%;
       border-radius: 6px;
+      border: 1px solid $btn-color;
+      transition: all 0.3s ease;
+      @keyframes rotate {
+        20% {transform: rotate(-10deg);}
+        40% {transform: rotate(10deg);}
+        60% {transform: rotate(-10deg);}
+        80% {transform: rotate(10deg);}
+        100% {transform: rotate(0deg);}
+      }
+      &:hover{
+        animation: rotate 1s ease;
+        animation-iteration-count: 1;
+        transition: all 0.3s ease;
+        background: $white;
+        .who-link{
+          transition: all 0.3s ease;
+          color: $btn-color;
+          .who-btn-text {
+            svg path {
+              transition: all 0.3s ease;
+              stroke: $btn-color;
+            }
+          }
+        }
+      }
       .who-link{
+        transition: all 0.3s ease;
         color: $white;
         .who-btn-text{
           display: flex;
@@ -43,6 +69,9 @@
           justify-content: center;
           line-height: 24px;
           padding: 16px 32px;
+          svg path{
+            transition: all 0.3s ease;
+          }
           .margin-text{
             margin-right: 12px;
           }

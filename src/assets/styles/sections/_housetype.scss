@@ -28,8 +28,15 @@
       justify-content: space-between;
       .house-image{
         width: 48.61%;
+        transition: all 0.3s ease;
+        &:hover{
+          transition: all 0.3s ease;
+          box-shadow: 4px 4px 8px 0 $gray;
+          transform: scale(0.99);
+        }
         .img-house{
           max-width: 100%;
+          display: block;
         }
       }
       .h-cards{
@@ -39,7 +46,22 @@
         align-items: flex-start;
         .link-house{
           margin-bottom: 16px;
+          &:hover{
+            .house-card{
+              background: beige;
+              transition: all 0.5s ease;
+            }
+            .house-logo{
+              transition: all 0.5s ease;
+              filter: hue-rotate(220deg) invert(100%);
+            }
+            .text-block{
+              transition: all 0.5s ease;
+              transform: skew(-10deg);
+            }
+          }
           .house-card{
+            transition: all 0.5s ease;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -49,6 +71,7 @@
             .img-block{
               width: 12.61%;
               .house-logo{
+                transition: all 0.5s ease;
                 max-width: 100%;
               }
             }
@@ -57,10 +80,12 @@
               display: flex;
               flex-direction: column;
               align-items: flex-start;
+              transition: all 0.5s ease;
               .card-title{
                 color: $black;
                 line-height: 24px;
                 font-weight: 500;
+                transition: all 0.5s ease;
                 @media screen and (max-width: 1439px){line-height: 20.4px;}
                 @media screen and (max-width: 1272px){line-height: 16.8px;}
                 @media screen and (max-width: 1103px){line-height: 13.8px;}

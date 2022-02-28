@@ -51,6 +51,27 @@
             background: $btn-color;
             border-radius: 6px;
             border: 1px solid $btn-color;
+            transition: all 0.3s ease;
+            @keyframes skew-scale {
+              12.5% {transform: scale(0.975) skew(-10deg);}
+              25% {transform: scale(0.95) skew(0deg);}
+              37.5% {transform: scale(0.925) skew(10deg);}
+              50% {transform: scale(0.9) skew(0deg);}
+              62.5% {transform: scale(0.925) skew(-10deg);}
+              75% {transform: scale(0.95) skew(0deg);}
+              87.5% {transform: scale(0.975) skew(10deg);}
+              100% {transform: scale(1) skew(0deg);}
+            }
+            &:hover{
+              animation: skew-scale 0.5s ease;
+              animation-iteration-count: 1;
+              transition: all 0.3s ease;
+              background: $white;
+              border-radius: 0;
+              .a-sub-btn{
+                color: $btn-color;
+              }
+            }
             .a-sub-btn{
               color: $white;
               .sub-btn-text{
@@ -91,6 +112,31 @@
           display: flex;
           flex-direction: row;
           align-items: center;
+          &:hover{
+            .link-house{
+              svg g path{
+                transition: all 0.3s ease;
+                fill: $darkblue;
+              }
+            }
+            @keyframes swingY {
+              15% {transform: translateY(6px);}
+              30% {transform: translateY(-6px);}
+              50% {transform: translateY(4px);}
+              70% {transform: translateY(-4px);}
+              85% {transform: translateY(2px);}
+              100% {transform: translateY(-2px);}
+            }
+            .link-logo{
+              animation: swingY 0.5s ease;
+              animation-iteration-count: 1;
+            }
+          }
+          .link-house{
+            svg g path{
+              transition: all 0.3s ease;
+            }
+          }
           .link-logo{
             color: $darkblue;
             margin-left: 6px;
@@ -108,6 +154,16 @@
           align-items: flex-start;
           margin-top: 37px;
           .social-link{
+            svg path{
+              transition: all 0.5s ease;
+            }
+            &:hover{
+              svg path{
+                transition: all 0.5s ease;
+                fill: $blue;
+                transform: rotate(360deg);
+              }
+            }
             margin-right: 18px;
           }
           .social-link:last-child{
@@ -135,6 +191,17 @@
             color: $gray;
             margin-top: 6px;
           }
+          .link:after {
+            background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+            display: block;
+            content: "";
+            height: 2px;
+            width: 0;
+            transition: width .3s ease-in-out;
+          }
+          .link:hover:after, .link:focus:after{
+            width: 100%;
+          }
           .link:first-child{
             margin-top: 0;
           }
@@ -160,15 +227,29 @@
             flex-direction: row;
             align-items: flex-start;
             margin-top: 6px;
+            &:hover{
+              .img-contact{
+                @keyframes bouncee {
+                  50% {transform: translateY(-3px);}
+                  100% {transform: translateY(0px);}
+                }
+                animation: bouncee 1s ease;
+                animation-iteration-count: infinite;
+              }
+              .link-contact{
+                transition: all 0.3s ease;
+                transform: skew(-20deg);
+              }
+            }
             .img-contact{
               cursor: pointer;
             }
             .link-contact{
+              transition: all 0.3s ease;
               line-height: 27px;
               color: $gray;
               margin-left: 8px;
             }
-
           }
           .contact-block:first-child{
             margin-top: 0;

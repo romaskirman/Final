@@ -17,6 +17,19 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      &:hover{
+        .logo-link{
+          animation: swing 1s ease;
+          animation-iteration-count: 1;
+        }
+        svg g path{
+          fill: $darkblue;
+          transition: all 0.3s ease;
+        }
+      }
+      svg g path {
+        transition: all 0.3s ease;
+      }
       .logo-link{
         color: $darkblue;
         margin-left: 6px;
@@ -29,10 +42,6 @@
           65% {transform: translateX(2px);}
           100% {transform: translateX(0);}
         }
-      }
-      .logo-link:hover {
-        animation: swing 1s ease;
-        animation-iteration-count: 1;
       }
     }
     .menu{
@@ -72,7 +81,7 @@
         .login-btn {
           width: 100%;
           background: $btn-color;
-          border: none;
+          border: 1px solid $btn-color;
           border-radius: 6px;
           line-height: 40px;
           font-size: 16px;
@@ -81,6 +90,8 @@
           transition: all 0.3s ease;
         }
         .login-btn:hover{
+          color: $btn-color;
+          background: $white;
           border-radius: 70%;
           transition: all 0.3s ease;
         }

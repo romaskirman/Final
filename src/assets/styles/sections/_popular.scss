@@ -66,6 +66,13 @@
           bottom: 9%;
           left: 50%;
           transform: translateX(-50%);
+          &:hover{
+            position: absolute;
+            bottom: 9%;
+            left: 50%;
+            transform: translateX(-50%) scale(0.9) skewX(-10deg);
+            transition: all 0.3s ease;
+          }
           &.big{
             bottom: 20%;
           }
