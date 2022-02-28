@@ -1,0 +1,174 @@
+{
+  "links": [
+    {
+      "link": "#home",
+      "title": "Home"
+    },
+    {
+      "link": "#services",
+      "title": "Services"
+    },
+    {
+      "link": "#about",
+      "title": "About Us"
+    },
+    {
+      "link": "#properties",
+      "title": "Properties"
+    },
+    {
+      "link": "#contact",
+      "title": "Contact"
+    }
+  ],
+
+  "herocards": [
+    {
+      "title": "Location",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "California",
+      "isPrice": false
+    },
+    {
+      "title": "Properties",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "Delux",
+      "isPrice": false
+    },
+    {
+      "title": "Price",
+      "image": "./assets/images/Group 3221strelka-vniz.png",
+      "description": "$10,000-$120,000",
+      "isPrice": true
+    }
+  ],
+
+  "aboutcards": [
+    {
+      "image": "./assets/images/support.png",
+      "title": "Free Consultation",
+      "paragraph": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit."
+    },
+    {
+      "image": "./assets/images/team.png",
+      "title": "Best Team members",
+      "paragraph": "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit."
+    }
+  ],
+
+  "cards": [
+    {
+      "img": "./assets/images/01logo.png",
+      "title": "Family House",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+    {
+      "img": "./assets/images/02logo.png",
+      "title": "Apartment",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+    {
+      "img": "./assets/images/03logo.png",
+      "title": "Studio & Offices",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    },
+    {
+      "img": "./assets/images/04logo.png",
+      "title": "Villa & Condo",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor pulvinar at augue vestibulum euismod risus "
+    }
+  ],
+
+  "places": [
+    {
+      "image": "./assets/images/bangladesh-bg.png",
+      "title": "Bangladesh",
+      "description": "50 Properties",
+      "isBig": true
+    },
+    {
+      "image": "./assets/images/japan-bg.png",
+      "title": "Japan",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/malaysia-bg.png",
+      "title": "Malaysia",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/london-bg.png",
+      "title": "London",
+      "description": "50 Properties",
+      "isBig": false
+    },
+    {
+      "image": "./assets/images/india-bg.png",
+      "title": "India",
+      "description": "50 Properties",
+      "isBig": false
+    }
+  ],
+
+  "reviewcards": [
+    {
+      "photo": "./assets/images/first-man.png",
+      "title": "Williamsons",
+      "stars": "./assets/images/three-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+    {
+      "photo": "./assets/images/second-man.png",
+      "title": "Farhad Reja",
+      "stars": "./assets/images/four-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    },
+    {
+      "photo": "./assets/images/third-man.png",
+      "title": "Peter sams",
+      "stars": "./assets/images/five-stars.png",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui posuere nulla id feugiat morbi dictum. Nec enim mauris velit integer. Vitae varius interdum enim eget elementum. Eu velit tortor proin risus amet habitant."
+    }
+  ],
+
+  "footer": [
+    {
+      "title": "Home",
+      "firstlink": "Process",
+      "secondlink": "Listing",
+      "thirdlink": "Popular Property",
+      "fourthlink": "Our agents"
+    },
+    {
+      "title": "Services",
+      "firstlink": "Site map",
+      "secondlink": "Property type",
+      "thirdlink": "Terms and conditions",
+      "fourthlink": "Privacy policy"
+    },
+    {
+      "title": "About",
+      "firstlink": "About us",
+      "secondlink": "Who choose us?",
+      "thirdlink": "Events",
+      "fourthlink": "Blog"
+    }
+  ],
+
+  "contact": [
+    {
+      "image": "./assets/images/phone.png",
+      "link": "+888 561 258"
+    },
+    {
+      "image": "./assets/images/gmail.png",
+      "link": "webmaile@gmail.com"
+    },
+    {
+      "image": "./assets/images/playstore.png",
+      "link": "Google Play"
+    }
+  ]
+}

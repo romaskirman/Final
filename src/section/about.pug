@@ -1,0 +1,18 @@
+section.about#about
+    .about-block
+        .img-container
+            .big-about-img
+                img.fix-big-img(src="./assets/images/big-about.png" alt="fashion style")
+                .small-about-img
+                    img.fix-small-img(src="./assets/images/small-about.png" alt="fashion style")
+        .description-container
+            h5.about-smalltitle About Us
+            h2.about-bigtitle We are Specializing in interior Improvements
+            h5.about-description Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit.
+                                 | Ut viverra posuere sem purus enim eleifend <br> habitant arcu, sed.
+            .about-cards
+                each card in aboutcards
+                    +About(card.image, card.title, card.paragraph)
+            .about-btn
+                a.about-link(href="#")
+                    h6.explore-now Explore Now

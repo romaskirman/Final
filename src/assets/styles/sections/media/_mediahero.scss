@@ -1,0 +1,27 @@
+@media screen and (max-width: 1350px) {
+  .main-title{
+    font-size: 58px;
+  }
+  .main-description{
+    font-size: 18px;
+  }
+  .special-font{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .main-title{
+    font-size: 54px;
+  }
+  .main-description{
+    font-size: 16px;
+  }
+  .special-font{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .main-description{
+    font-size: 14px;
+  }
+}

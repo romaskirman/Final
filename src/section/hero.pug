@@ -1,0 +1,10 @@
+section.hero
+    .hero-block
+        h1.main-title Find Your Dream House
+        h5.main-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra posuere sem purus enim eleifend habitant arcu, sed.
+        .search-menu
+            each card in herocards
+                +Hero(card.title, card.image, card.description, card.isPrice)
+            .search-block
+                a.search-link(href="#")
+                    h5.search-text Search

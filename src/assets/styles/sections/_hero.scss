@@ -1,0 +1,118 @@
+@import "./media/_mediahero";
+.hero{
+  position: relative;
+  background: url('/assets/images/background.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .hero-block{
+    max-width: 81.25%;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 185px 0 140px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-title{
+      color: $white;
+    }
+    .main-description{
+      max-width: 620px;
+      margin-top: 24px;
+      color: $white;
+      text-align: center;
+      line-height: 30px;
+    }
+    .search-menu{
+      width: 100%;
+      margin-top: 97px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: $white;
+      padding: 24px;
+      .h-card{
+        width: 23%;
+        padding: 10px 30px;
+        border: 0.5px solid $card-brd;
+        transition: all 0.3s ease;
+        .h-card-title{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          &:hover{
+            .h-card-paragraph{
+              color: $hero-p;
+              transition: all 0.3s ease;
+            }
+            .strelka{
+              transition: all 0.3s ease;
+              transform: rotate(-90deg);
+            }
+          }
+          .h-card-paragraph{
+            transition: all 0.3s ease;
+            margin-right: 6px;
+            color: $gray;
+            cursor: pointer;
+          }
+          .strelka{
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+        }
+        .h-card-text{
+          margin-top: 8px;
+          line-height: 24px;
+          color: $black;
+          .special-weight{
+            font-weight: 500;
+          }
+        }
+      }
+      .h-card:hover{
+        background: $hero-card;
+        transition: all 0.3s ease;
+      }
+      .search-block{
+        width: 23%;
+        background: $btn-color;
+        transition: all 0.3s ease;
+        &:hover {
+          transition: all 0.3s ease;
+          transform: skew(-10deg);
+          background: $hero-btn;
+          .search-link {
+            transition: all 0.3s ease;
+            color: $hero-txt;
+          }
+        }
+        .search-link{
+          transition: all 0.3s ease;
+          color: $white;
+          .search-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 23px 0;
+          }
+        }
+      }
+    }
+  }
+}
+.hero:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $dark-bg;
+  z-index: 2;
+}

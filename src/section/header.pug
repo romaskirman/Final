@@ -1,0 +1,12 @@
+header.header#home
+    .header-block
+        .logo
+            include ../extra/svg/mainlogo
+            a.logo-link(href="#") Building
+        nav
+            ul.menu
+                each link in links
+                    +Header(link.link, link.title)
+        .log-in
+            a.log-link(href="#")
+                button.login-btn(type="submit") Log In

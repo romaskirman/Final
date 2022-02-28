@@ -1,0 +1,110 @@
+@import "./media/_mediahouse";
+.housetype{
+  max-width: 1440px;
+  width: 100%;
+  background: $bg-housetype;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .house-block{
+    max-width: 80%;
+    width: 100%;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .house-title{
+      color: $black;
+      line-height: 61px;
+      @media screen and (max-width: 1272px){line-height: 51px;}
+      @media screen and (max-width: 1103px){line-height: 41px;}
+    }
+    .house-content{
+      margin-top: 68px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .house-image{
+        width: 48.61%;
+        transition: all 0.3s ease;
+        &:hover{
+          transition: all 0.3s ease;
+          box-shadow: 4px 4px 8px 0 $gray;
+          transform: scale(0.99);
+        }
+        .img-house{
+          max-width: 100%;
+          display: block;
+        }
+      }
+      .h-cards{
+        width: 46.96%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .link-house{
+          margin-bottom: 16px;
+          &:hover{
+            .house-card{
+              background: beige;
+              transition: all 0.5s ease;
+            }
+            .house-logo{
+              transition: all 0.5s ease;
+              filter: hue-rotate(220deg) invert(100%);
+            }
+            .text-block{
+              transition: all 0.5s ease;
+              transform: skew(-10deg);
+            }
+          }
+          .house-card{
+            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4.43% 13.49% 4.43% 4.43%;
+            background: $white;
+            .img-block{
+              width: 12.61%;
+              .house-logo{
+                transition: all 0.5s ease;
+                max-width: 100%;
+              }
+            }
+            .text-block{
+              width: 81.18%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              transition: all 0.5s ease;
+              .card-title{
+                color: $black;
+                line-height: 24px;
+                font-weight: 500;
+                transition: all 0.5s ease;
+                @media screen and (max-width: 1439px){line-height: 20.4px;}
+                @media screen and (max-width: 1272px){line-height: 16.8px;}
+                @media screen and (max-width: 1103px){line-height: 13.8px;}
+              }
+              .card-descr{
+                color: $gray;
+                line-height: 20px;
+                margin-top: 6px;
+                @media screen and (max-width: 1439px){line-height: 17px;}
+                @media screen and (max-width: 1272px){line-height: 14px;}
+                @media screen and (max-width: 1103px){line-height: 11.5px;}
+              }
+            }
+          }
+        }
+        .link-house:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@import "./media/_mediawhochoose";
+.why-choose{
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: $bg-who-choose;
+  .text-block{
+    max-width: 50.77%;
+    width: 100%;
+    padding-left: 9.375%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .who-title{
+      color: $black;
+      line-height: 61px;
+      margin-top: 15.6%;
+      @media screen and (max-width: 1330px){line-height: 54px;}
+      @media screen and (max-width: 1210px){line-height: 47px;}
+      @media screen and (max-width: 1093px){line-height: 41px;}
+    }
+    .who-description{
+      color: $gray;
+      line-height: 30px;
+      margin-top: 3.4%;
+      @media screen and (max-width: 1330px){line-height: 26px;}
+      @media screen and (max-width: 1210px){line-height: 23px;}
+      @media screen and (max-width: 1093px){line-height: 20px;}
+    }
+    .who-btn{
+      background: $btn-color;
+      margin-top: 6.7%;
+      border-radius: 6px;
+      border: 1px solid $btn-color;
+      transition: all 0.3s ease;
+      @keyframes rotate {
+        20% {transform: rotate(-10deg);}
+        40% {transform: rotate(10deg);}
+        60% {transform: rotate(-10deg);}
+        80% {transform: rotate(10deg);}
+        100% {transform: rotate(0deg);}
+      }
+      &:hover{
+        animation: rotate 1s ease;
+        animation-iteration-count: 1;
+        transition: all 0.3s ease;
+        background: $white;
+        .who-link{
+          transition: all 0.3s ease;
+          color: $btn-color;
+          .who-btn-text {
+            svg path {
+              transition: all 0.3s ease;
+              stroke: $btn-color;
+            }
+          }
+        }
+      }
+      .who-link{
+        transition: all 0.3s ease;
+        color: $white;
+        .who-btn-text{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          line-height: 24px;
+          padding: 16px 32px;
+          svg path{
+            transition: all 0.3s ease;
+          }
+          .margin-text{
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+  .img-block{
+    .who-img{
+      max-width: 100%;
+    }
+  }
+}

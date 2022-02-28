@@ -1,0 +1,71 @@
+.review{
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: $bg-review;
+  margin-top: 120px;
+  .review-block{
+    max-width: 81.25%;
+    width: 100%;
+    padding: 97px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .review-title{
+      font-family: 'Noto Sans', sans-serif;
+      color: $black;
+      line-height: 65px;
+    }
+    .review-description{
+      color: $gray;
+      line-height: 27px;
+      margin-top: 16px;
+    }
+    .card-container{
+      margin-top: 139px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      .card-review{
+        width: 31.62%;
+        background: $white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease;
+
+        &:hover{
+          background: $hero-card;
+          transition: all 0.5s ease;
+          transform: translateY(-25px) scale(1.05);
+        }
+        .review-img{
+          position: absolute;
+          top: -79px;
+          max-width: 100%;
+        }
+        .c-title{
+          color: $black;
+          line-height: 28px;
+          margin-top: 81px;
+        }
+        .review-stars{
+          margin-top: 8px;
+        }
+        .review-paragraph{
+          max-width: 79.18%;
+          margin-top: 16px;
+          color: $gray;
+          line-height: 20px;
+          margin-bottom: 31px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
